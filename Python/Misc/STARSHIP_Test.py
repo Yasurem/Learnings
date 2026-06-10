@@ -5,9 +5,9 @@ from google import genai
 # ==========================================
 # CONFIGURATION — Fill these in
 # ==========================================
-HTTPSMS_API_KEY = "uk_tDiNLOO2x1h7RfzafgKkVan94FNuUKebua-mUjv25zIVFkPJyupSUK1OO-vs9Pdf"
-GEMINI_API_KEY  = "AIzaSyB_-jSKfJW0jPiUf2JBT1QZPKx-khooqvM"
-FROM_NUMBER     = "+639760732493"  # ← Replace with your actual Android number
+HTTPSMS_API_KEY = '''APIKEY'''
+GEMINI_API_KEY  = '''APIKEY'''
+FROM_NUMBER     = '''NUMBER'''  # ← Replace with your actual Android number
 
 # ==========================================
 # INIT
