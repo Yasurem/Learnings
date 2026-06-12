@@ -1,0 +1,117 @@
+| Customer#: 1
+| Discount: 0.00
+| Orders Code     | Order Price | Quantity |
+| 101           | 320.00      |        3 |
+|-----------------------------------
+| Bill Total: 2010.00 |
+| Tendered:   2010.00 |
+| Change:     0.00 |
+|-----------------------------------
+| SUMMARY | TOTAL: 2010.0000 |
+
+| Customer#: 1
+| Discount: 0.00
+| Orders Code     | Order Price | Quantity |
+| 101           | 320.00      |        3 |
+| 203           | 350.00      |        3 |
+|-----------------------------------
+| Bill Total: 2010.00 |
+| Tendered:   2010.00 |
+| Change:     0.00 |
+|-----------------------------------
+| SUMMARY | TOTAL: 2010.0000 |
+
+| Customer#: 1
+| Discount: 25.00
+| Orders Code     | Order Price | Quantity |
+| 104           | 450.00      |        1 |
+|-----------------------------------
+| Bill Total: 1250.00 |
+| Tendered:   1225.00 |
+| Change:     0.00 |
+|-----------------------------------
+| SUMMARY | TOTAL: 1250.0000 |
+
+| Customer#: 1
+| Discount: 25.00
+| Orders Code     | Order Price | Quantity |
+| 104           | 450.00      |        1 |
+| 703           | 200.00      |        4 |
+|-----------------------------------
+| Bill Total: 1250.00 |
+| Tendered:   1225.00 |
+| Change:     0.00 |
+|-----------------------------------
+| SUMMARY | TOTAL: 1250.0000 |
+
+| Customer#: 2
+| Discount: 356.40
+| Orders Code     | Order Price | Quantity |
+| 601           | 190.00      |        6 |
+|-----------------------------------
+| Bill Total: 1620.00 |
+| Tendered:   1500.00 |
+| Change:     236.40 |
+|-----------------------------------
+| SUMMARY | TOTAL: 1620.0000 |
+
+| Customer#: 2
+| Discount: 356.40
+| Orders Code     | Order Price | Quantity |
+| 601           | 190.00      |        6 |
+| 603           | 160.00      |        3 |
+|-----------------------------------
+| Bill Total: 1620.00 |
+| Tendered:   1500.00 |
+| Change:     236.40 |
+|-----------------------------------
+| SUMMARY | TOTAL: 1620.0000 |
+
+| Customer#: 3
+| Discount: 130.90
+| Orders Code     | Order Price | Quantity |
+| 101           | 320.00      |        5 |
+|-----------------------------------
+| Bill Total: 1870.00 |
+| Tendered:   2000.00 |
+| Change:     260.90 |
+|-----------------------------------
+| SUMMARY | TOTAL: 1870.0000 |
+
+| Customer#: 3
+| Discount: 130.90
+| Orders Code     | Order Price | Quantity |
+| 101           | 320.00      |        5 |
+| 403           | 270.00      |        1 |
+|-----------------------------------
+| Bill Total: 1870.00 |
+| Tendered:   2000.00 |
+| Change:     260.90 |
+|-----------------------------------
+| SUMMARY | TOTAL: 1870.0000 |
+
+| Customer#: 1
+| Discount: 42.50
+| Orders Code     | Order Price | Quantity |
+| 101           | 320.00      |        1 |
+| 204           | 330.00      |        1 |
+|-----------------------------------
+| Bill Total: 850.00 |
+| Tendered:   900.00 |
+| Change:     92.50 |
+|-----------------------------------
+| SUMMARY | TOTAL: 850.0000 |
+
+| Customer#: 1
+| Discount: 42.50
+| Orders Code     | Order Price | Quantity |
+| 101           | 320.00      |        1 |
+| 204           | 330.00      |        1 |
+| 703           | 200.00      |        1 |
+|-----------------------------------
+| Bill Total: 850.00 |
+| Tendered:   900.00 |
+| Change:     92.50 |
+|-----------------------------------
+| SUMMARY | TOTAL: 850.0000 |
+

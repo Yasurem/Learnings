@@ -1,0 +1,1 @@
+checkR = num % 2; 
