@@ -1,0 +1,51 @@
+import json
+import re
+
+def scrub_notebook(input_file, output_file):
+    """
+    Parses a Jupyter Notebook JSON structure and removes all code located
+    between standard DeepLearning.AI assignment markers.
+    """
+    # Load the notebook
+    with open(input_file, 'r', encoding='utf-8') as file:
+        notebook = json.load(file)
+
+    # Regex patterns to catch variations in spacing or casing
+    start_marker = re.compile(r'#\s*START CODE HERE', re.IGNORECASE)
+    end_marker = re.compile(r'#\s*END CODE HERE', re.IGNORECASE)
+
+    # Iterate through every cell in the notebook
+    for cell in notebook.get('cells', []):
+        if cell.get('cell_type') == 'code':
+            original_source = cell.get('source', [])
+            scrubbed_source = []
+            inside_answer_block = False
+
+            for line in original_source:
+                if start_marker.search(line):
+                    scrubbed_source.append(line)
+                    # Insert a blank placeholder so the cell still runs
+                    scrubbed_source.append("    # YOUR CODE HERE\n")
+                    scrubbed_source.append("    None\n")
+                    inside_answer_block = True
+                elif end_marker.search(line):
+                    scrubbed_source.append(line)
+                    inside_answer_block = False
+                elif not inside_answer_block:
+                    scrubbed_source.append(line)
+
+            # Overwrite the cell's source with the scrubbed version
+            cell['source'] = scrubbed_source
+
+    # Save the clean notebook
+    with open(output_file, 'w', encoding='utf-8') as file:
+        json.dump(notebook, file, indent=1)
+        
+    print(f"Successfully scrubbed answers. Clean file saved to: {output_file}")
+
+if __name__ == "__main__":
+    # Replace these strings with your actual file paths
+    input_notebook = "C3_W1_Assignment_Answered.ipynb"
+    output_notebook = "C3_W1_Assignment.ipynb"
+    
+    scrub_notebook(input_notebook, output_notebook)
